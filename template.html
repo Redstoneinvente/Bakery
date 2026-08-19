@@ -1,0 +1,217 @@
+<div style="margin:0; padding:24px 10px; background:#f6efe6; font-family:Arial, Helvetica, sans-serif; color:#3d2b24;">
+
+  <!-- Main Container -->
+  <div style="max-width:620px; margin:0 auto;">
+
+    <!-- Header -->
+    <div style="background:#fffaf4; border-radius:18px 18px 0 0; overflow:hidden; border:1px solid #eadbc9;">
+
+      <!-- Decorative Top -->
+      <div style="height:8px; background:#8b4a36;"></div>
+
+      <div style="padding:28px 28px 22px; text-align:center;">
+
+        <a href="[Website Link]" target="_blank" rel="noopener" style="text-decoration:none;">
+          <img
+            src="https://github.com/Redstoneinvente/Bakery/blob/14c8b89281f31392ea0b4c84fda3ad94247b05e9/Resources/Images/Logos/logo_final.png?raw=true"
+            alt="Bakery"
+            height="58"
+            style="height:58px; max-width:180px; object-fit:contain;"
+          >
+        </a>
+
+        <div style="margin-top:18px; font-size:26px; font-weight:bold; color:#4a2e26;">
+          Thank You for Your Order! ♡
+        </div>
+
+        <div style="margin-top:8px; font-size:14px; color:#8b7167;">
+          Your freshly baked goodies are on their way to you.
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Order Card -->
+    <div style="background:#ffffff; border:1px solid #eadbc9; border-top:0; padding:28px;">
+
+      <!-- Order Number -->
+      <div style="background:#f9f1e8; border-radius:12px; padding:16px 18px; margin-bottom:26px;">
+
+        <div style="font-size:11px; text-transform:uppercase; letter-spacing:1.5px; color:#9b7b6d; font-weight:bold;">
+          Your Order
+        </div>
+
+        <div style="font-size:19px; font-weight:bold; color:#4a2e26; margin-top:4px;">
+          #{{order_id}}
+        </div>
+
+      </div>
+
+
+      <!-- Tracking Message -->
+      <div style="text-align:center; padding:0 10px 26px;">
+
+        <div style="font-size:30px; margin-bottom:8px;">
+          🥐
+        </div>
+
+        <div style="font-size:16px; font-weight:bold; color:#4a2e26;">
+          We're getting your order ready!
+        </div>
+
+        <div style="font-size:13px; color:#8b7167; line-height:1.6; margin-top:6px;">
+          We'll send you tracking information as soon as your order is ready to leave our bakery.
+        </div>
+
+      </div>
+
+
+      <!-- Items -->
+      <div style="border-top:1px solid #eadbc9; padding-top:20px;">
+
+        <div style="font-size:12px; text-transform:uppercase; letter-spacing:1.5px; font-weight:bold; color:#8b4a36; margin-bottom:8px;">
+          Your Treats
+        </div>
+
+        {{#orders}}
+
+        <div style="border-bottom:1px solid #f0e6dc; padding:18px 0;">
+
+          <table style="width:100%; border-collapse:collapse;">
+            <tbody>
+              <tr style="vertical-align:middle;">
+
+                <!-- Product Image -->
+                <td style="width:76px; padding-right:14px;">
+
+                  <div style="width:64px; height:64px; border-radius:12px; background:#f8eee4; overflow:hidden;">
+
+                    <img
+                      src="{{image_url}}"
+                      alt="{{name}}"
+                      width="64"
+                      height="64"
+                      style="width:64px; height:64px; object-fit:cover; display:block;"
+                    >
+
+                  </div>
+
+                </td>
+
+                <!-- Product Name -->
+                <td style="padding-right:10px;">
+
+                  <div style="font-size:15px; font-weight:bold; color:#4a2e26;">
+                    {{name}}
+                  </div>
+
+                  <div style="font-size:12px; color:#9b8277; margin-top:5px;">
+                    Quantity: {{units}}
+                  </div>
+
+                </td>
+
+                <!-- Price -->
+                <td style="text-align:right; white-space:nowrap;">
+
+                  <div style="font-size:15px; font-weight:bold; color:#4a2e26;">
+                    Rs {{price}}
+                  </div>
+
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        {{/orders}}
+
+      </div>
+
+
+      <!-- Totals -->
+      <div style="margin-top:24px; background:#fcf7f1; border-radius:14px; padding:20px;">
+
+        <table style="width:100%; border-collapse:collapse; font-size:13px;">
+
+          <tbody>
+
+            <tr>
+              <td style="padding:6px 0; color:#806b61;">
+                Shipping
+              </td>
+
+              <td style="padding:6px 0; text-align:right; white-space:nowrap; color:#4a2e26;">
+                Rs {{cost.shipping}}
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:6px 0; color:#806b61;">
+                Taxes
+              </td>
+
+              <td style="padding:6px 0; text-align:right; white-space:nowrap; color:#4a2e26;">
+                Rs {{cost.tax}}
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" style="padding-top:14px;">
+                <div style="border-top:1px dashed #d8c6b8;"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-top:15px; font-size:16px; font-weight:bold; color:#4a2e26;">
+                Order Total
+              </td>
+
+              <td style="padding-top:15px; text-align:right; font-size:20px; font-weight:bold; color:#8b4a36; white-space:nowrap;">
+                Rs {{cost.total}}
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+
+      <!-- Thank You Note -->
+      <div style="text-align:center; padding:28px 10px 5px;">
+
+        <div style="font-size:14px; font-weight:bold; color:#4a2e26;">
+          Baked with love, just for you ♡
+        </div>
+
+        <div style="font-size:12px; color:#9b8277; margin-top:6px;">
+          Thank you for supporting our bakery!
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div style="background:#4a2e26; border-radius:0 0 18px 18px; padding:22px 20px; text-align:center;">
+
+      <div style="font-size:13px; color:#f8eee4; font-weight:bold;">
+        Your order is almost ready!
+      </div>
+
+      <div style="font-size:11px; color:#cdb9ac; margin-top:8px; line-height:1.6;">
+        The email was sent to {{email}}<br>
+        You received this email because you placed an order with us.
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
