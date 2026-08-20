@@ -25,11 +25,13 @@ const buildTemplateData = (order) => ({
   customerEmail: order.user?.email || '',
   customerPhone: order.user?.phone || '',
   itemCount: order.items?.length || 0,
+  pack_size: (order.items || []).map(item => item.selectedPiecesPerBox ? `${item.selectedPiecesPerBox} Pieces` : (item.pieces || '')).filter(Boolean).join(', '),
   items: (order.items || []).map(item => ({
     name: item.name,
     quantity: item.quantity,
     price: item.price != null ? item.price.toFixed(2) : '',
-    itemTotal: item.price != null ? (item.price * item.quantity).toFixed(2) : ''
+    itemTotal: item.price != null ? (item.price * item.quantity).toFixed(2) : '',
+    pack_size: item.selectedPiecesPerBox ? `${item.selectedPiecesPerBox} Pieces` : (item.pieces || '')
   }))
 });
 
