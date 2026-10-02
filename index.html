@@ -26,6 +26,10 @@
         const EMAILJS_STATUS_TEMPLATE_ID = 'template_6185xld';
         const EMAILJS_PUBLIC_KEY = 'ZP7dUh_bOfue4qoXh';
 
+        const CONTACT_EMAILJS_PUBLIC_KEY = 'QJhJCyyGnx4e76psF';
+const CONTACT_EMAILJS_SERVICE_ID = 'service_xlt44o4';
+const CONTACT_EMAILJS_TEMPLATE_ID = 'template_ivypjxd';
+
         if (window.emailjs) {
             emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
         }
@@ -152,6 +156,10 @@
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
         }
 
+        .image-fallback { background: linear-gradient(145deg, #fff4f5, #f8e6d7 55%, #f6dce9); }
+        .image-fallback::after { content: 'Baked with love'; display: grid; place-items: center; width: 100%; height: 100%; color: #9a6641; font-family: Georgia, serif; font-size: 1.1rem; letter-spacing: .04em; }
+        .product-card img { background: #fff4f5; }
+
         .product-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 14px 28px -6px rgba(236, 72, 153, 0.16), 0 4px 10px -2px rgba(0, 0, 0, 0.04);
@@ -194,6 +202,9 @@
             transform: translateY(-2px) scale(1.03) !important;
             box-shadow: 0 4px 12px rgba(236, 72, 153, 0.25) !important;
         }
+
+        .image-fallback { background: linear-gradient(145deg, #fff4f5, #f8e6d7 55%, #f6dce9); }
+        .image-fallback::after { content: 'Baked with love'; display: grid; place-items: center; width: 100%; height: 100%; color: #9a6641; font-family: Georgia, serif; font-size: 1.1rem; letter-spacing: .04em; }
 
         /* Flavor Chips & Expand Indicators */
         .flavor-expand-indicator {
@@ -347,8 +358,8 @@
                             OUR CUTE <br>LITTLE <br>BAKERY
                         </h1>
                         <p class="text-gray-600 mb-8 max-w-md mx-auto md:mx-0">
-                            What should we know about this product? Why should your customers want it? Freshly baked
-                            every day.
+                            Small-batch bakes for every kind of sweet tooth, from classic cookies and fudgy brownies
+                            to Mauritian favourites and celebration cakes.
                         </p>
                         <a href="#shop"
                             class="inline-block bg-bakery-accent text-white px-8 py-3 rounded-full font-medium hover:bg-pink-600 transition-colors shadow-lg shadow-pink-200">
@@ -360,7 +371,7 @@
                     <div class="md:w-1/2 relative">
                         <!-- Main Cake -->
                         <div class="relative z-10 w-64 h-64 md:w-80 md:h-80 mx-auto animate-float">
-                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="./Resources/Images/Bakery/cakes.svg"
                                 alt="Pink Drip Cake"
                                 class="w-full h-full object-cover rounded-2xl shadow-xl border-4 border-white">
                             <!-- Pedestal graphic representation -->
@@ -372,8 +383,8 @@
                         <!-- Floating Macarons Image -->
                         <div
                             class="absolute bottom-10 -left-10 md:bottom-20 md:-left-16 z-20 w-32 h-32 gold-border-circle animate-float-delayed">
-                            <img src="https://images.unsplash.com/photo-1569864358642-9d71540ce536?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                                alt="Macarons" class="w-full h-full object-cover rounded-full">
+                            <img src="./Resources/Images/Bakery/cookies.svg"
+                                alt="Freshly baked cookies" class="w-full h-full object-cover rounded-full">
                         </div>
                     </div>
                 </div>
@@ -384,65 +395,17 @@
                 <div
                     class="whitespace-nowrap overflow-hidden text-bakery-gold text-sm font-semibold tracking-wider flex space-x-8">
                     <!-- Repeated span for continuous feel -->
-                    <span>✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦
-                        20% OFF ✦ 20% OFF ✦ 20% OFF</span>
-                    <span>✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦ 20% OFF ✦
-                        20% OFF ✦ 20% OFF ✦ 20% OFF</span>
+                    <span>✦ MADE FRESH IN MAURITIUS ✦ BAKED WITH LOVE ✦ MADE FRESH IN MAURITIUS ✦ BAKED WITH LOVE</span>
+                    <span>✦ MADE FRESH IN MAURITIUS ✦ BAKED WITH LOVE ✦ MADE FRESH IN MAURITIUS ✦ BAKED WITH LOVE</span>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="py-24 bg-[#fffaf0]">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl font-serif text-bakery-gold font-bold mb-12 text-center uppercase">Loved by You</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-pink-100">
-                        <div class="text-bakery-gold mb-4"><i data-lucide="quote" class="w-8 h-8"></i></div>
-                        <p class="text-gray-600 italic mb-6">"Absolutely delicious cakes! The attention to detail is
-                            stunning and it tastes even better than it looks."</p>
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-bakery-pink text-bakery-accent flex items-center justify-center font-bold">
-                                JD</div>
-                            <div>
-                                <p class="font-semibold text-bakery-gold">Jane Doe</p>
-                                <p class="text-xs text-gray-400">Regular Customer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-pink-100">
-                        <div class="text-bakery-gold mb-4"><i data-lucide="quote" class="w-8 h-8"></i></div>
-                        <p class="text-gray-600 italic mb-6">"The best macarons in town, hands down. Fresh, delicate,
-                            and the perfect balance of flavors!"</p>
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-bakery-pink text-bakery-accent flex items-center justify-center font-bold">
-                                MS</div>
-                            <div>
-                                <p class="font-semibold text-bakery-gold">Mark Smith</p>
-                                <p class="text-xs text-gray-400">Happy Client</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-pink-100">
-                        <div class="text-bakery-gold mb-4"><i data-lucide="quote" class="w-8 h-8"></i></div>
-                        <p class="text-gray-600 italic mb-6">"My go-to place for custom orders. Every birthday cake
-                            they've made for us has been the highlight of the day."</p>
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-bakery-pink text-bakery-accent flex items-center justify-center font-bold">
-                                AL</div>
-                            <div>
-                                <p class="font-semibold text-bakery-gold">Alice Lane</p>
-                                <p class="text-xs text-gray-400">Fan for Life</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Product promise -->
+        <section class="py-16 bg-[#fffaf0]">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <p class="text-sm uppercase tracking-[.25em] text-bakery-accent mb-3">A little something for everyone</p>
+                <h2 class="text-3xl md:text-4xl font-serif text-bakery-gold font-bold">Made to share. Impossible to resist.</h2>
             </div>
         </section>
 
@@ -451,8 +414,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-serif text-bakery-accent font-bold mb-4 uppercase">About Us</h2>
-                    <p class="text-gray-500 max-w-2xl mx-auto">Take a minute to write an introductory text. It is short,
-                        sweet and to the point.</p>
+                            <p class="text-gray-500 max-w-2xl mx-auto">A little something sweet, made with care and a generous pinch of island warmth.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -460,23 +422,23 @@
                     <div class="relative h-96 flex justify-center items-center">
                         <!-- Top Right Circular Image -->
                         <div class="absolute top-0 right-10 w-48 h-48 gold-border-circle z-10">
-                            <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            <img src="./Resources/Images/Bakery/cakes.svg"
                                 alt="Frosting" class="w-full h-full object-cover rounded-full">
                         </div>
                         <!-- Center Left Circular Image (Donuts) -->
                         <div class="absolute top-1/4 left-0 w-56 h-56 gold-border-circle z-20">
-                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            <img src="./Resources/Images/Bakery/crinkle-cookies.svg"
                                 alt="Donuts" class="w-full h-full object-cover rounded-full">
                         </div>
                         <!-- Bottom Arch Image (Macarons stack) -->
                         <div
                             class="absolute bottom-0 right-1/4 w-32 h-48 arch-image border-4 border-bakery-gold/50 z-0">
-                            <img src="https://images.unsplash.com/photo-1569864358642-9d71540ce536?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            <img src="./Resources/Images/Bakery/napolitaines.svg"
                                 alt="Stacked Treats" class="w-full h-full object-cover">
                         </div>
                         <!-- Small accent image -->
                         <div class="absolute bottom-10 left-1/4 w-20 h-20 gold-border-circle z-30">
-                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                            <img src="./Resources/Images/Bakery/ladoo.svg"
                                 alt="Cake slice" class="w-full h-full object-cover rounded-full">
                         </div>
                     </div>
@@ -485,9 +447,9 @@
                     <div class="text-center md:text-left">
                         <h3 class="text-3xl font-serif text-bakery-gold font-bold mb-6 uppercase">Who We Are</h3>
                         <p class="text-gray-600 mb-8 leading-relaxed">
-                            A little bit about what inspired you to create your business. Why should people buy from
-                            you? Why do they need your products? Share your passion for baking and the quality
-                            ingredients you use to craft every delicious treat.
+                            We make the treats that bring people together: everyday cookies and brownies, delicate
+                            Mauritian napolitaines, Indian sweets, and cakes made for life's special moments. Browse
+                            the menu and get in touch for a custom order.
                         </p>
                         <a href="#contact"
                             class="inline-block bg-bakery-accent text-white px-8 py-3 rounded-full font-medium hover:bg-pink-600 transition-colors shadow-md">
@@ -510,48 +472,48 @@
                     <div
                         class="bg-pink-100 rounded-t-full p-8 text-center shadow-sm relative pt-12 hover:-translate-y-2 transition-transform duration-300">
                         <div class="w-32 h-32 mx-auto gold-border-circle -mt-20 mb-6 bg-white">
-                            <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            <img src="./Resources/Images/Bakery/cakes.svg"
                                 alt="Cupcakes" class="w-full h-full object-cover rounded-full">
                         </div>
                         <h4 class="text-xl font-serif text-bakery-accent font-bold mb-4 uppercase tracking-widest">
-                            Service 1</h4>
+                            Celebration Cakes</h4>
                         <p class="text-xs text-gray-500 mb-6 leading-relaxed">
-                            Cake gummi bears apple pie gingerbread carrot cake cheesecake. Sesame snaps marzipan
-                            chocolate bar. Toffee dessert baked apple pie jelly-o topping candy icing.
+                            Made to order for birthdays, family gatherings, and every sweet milestone. Tell us your
+                            size, flavour, and theme and we'll help you plan it.
                         </p>
-                        <p class="text-sm font-semibold text-bakery-gold mb-6">FROM MUR 1,500</p>
+                        <p class="text-sm font-semibold text-bakery-gold mb-6">CUSTOM ORDERS</p>
                     </div>
 
                     <!-- Service Card 2 -->
                     <div
                         class="bg-pink-100 rounded-t-full p-8 text-center shadow-sm relative pt-12 hover:-translate-y-2 transition-transform duration-300">
                         <div class="w-32 h-32 mx-auto gold-border-circle -mt-20 mb-6 bg-white">
-                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            <img src="./Resources/Images/Bakery/crinkle-cookies.svg"
                                 alt="Box of Donuts" class="w-full h-full object-cover rounded-full">
                         </div>
                         <h4 class="text-xl font-serif text-bakery-accent font-bold mb-4 uppercase tracking-widest">
-                            Service 2</h4>
+                            Mauritian Classics</h4>
                         <p class="text-xs text-gray-500 mb-6 leading-relaxed">
-                            Cake gummi bears apple pie gingerbread carrot cake cheesecake. Sesame snaps marzipan
-                            chocolate bar. Toffee dessert baked apple pie jelly-o topping candy icing.
+                            Discover buttery, jam-filled napolitaines finished with their signature sweet pink icing.
+                            A little taste of home, made for sharing.
                         </p>
-                        <p class="text-sm font-semibold text-bakery-gold mb-6">FROM MUR 2,500</p>
+                        <p class="text-sm font-semibold text-bakery-gold mb-6">FRESHLY BAKED</p>
                     </div>
 
                     <!-- Service Card 3 -->
                     <div
                         class="bg-pink-100 rounded-t-full p-8 text-center shadow-sm relative pt-12 hover:-translate-y-2 transition-transform duration-300">
                         <div class="w-32 h-32 mx-auto gold-border-circle -mt-20 mb-6 bg-white">
-                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            <img src="./Resources/Images/Bakery/cakes.svg"
                                 alt="Layer Cake" class="w-full h-full object-cover rounded-full">
                         </div>
                         <h4 class="text-xl font-serif text-bakery-accent font-bold mb-4 uppercase tracking-widest">
-                            Service 3</h4>
+                            Sweet Treat Boxes</h4>
                         <p class="text-xs text-gray-500 mb-6 leading-relaxed">
-                            Cake gummi bears apple pie gingerbread carrot cake cheesecake. Sesame snaps marzipan
-                            chocolate bar. Toffee dessert baked apple pie jelly-o topping candy icing.
+                            Mix and match cookies, brownies, and Indian sweets for a thoughtful gift or a treat for
+                            the table. Ask us about today's flavours.
                         </p>
-                        <p class="text-sm font-semibold text-bakery-gold mb-6">FROM MUR 2,000</p>
+                        <p class="text-sm font-semibold text-bakery-gold mb-6">MADE TO SHARE</p>
                     </div>
                 </div>
 
@@ -568,68 +530,36 @@
         <section id="shop" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-serif text-bakery-gold font-bold mb-4">Shop</h2>
-                    <div class="flex justify-center space-x-6 text-sm text-gray-500">
-                        <span
-                            class="shop-filter hover:text-bakery-accent cursor-pointer transition-colors">Seasonal</span>
-                        <span
-                            class="shop-filter hover:text-bakery-accent cursor-pointer font-semibold text-bakery-accent transition-colors">Sale</span>
-                        <span class="shop-filter hover:text-bakery-accent cursor-pointer transition-colors">Best
-                            sellers</span>
-                        <span class="shop-filter hover:text-bakery-accent cursor-pointer transition-colors">New
-                            in</span>
-                    </div>
+                    <h2 class="text-4xl font-serif text-bakery-gold font-bold mb-3">The Treat Menu</h2>
+                    <p class="text-gray-500 mb-8">Cookies, crinkles, Mauritian favourites, Indian sweets, cakes & brownies.</p>
+                    <nav aria-label="Shop categories" class="flex flex-wrap justify-center gap-2.5 text-sm">
+                        <button class="shop-filter rounded-full bg-pink-50 px-4 py-2 text-bakery-gold hover:bg-bakery-pink-dark" data-category="all">All treats</button>
+                        <button class="shop-filter rounded-full bg-pink-50 px-4 py-2 text-bakery-gold hover:bg-bakery-pink-dark" data-category="Cookies">Cookies</button>
+                        <button class="shop-filter rounded-full bg-pink-50 px-4 py-2 text-bakery-gold hover:bg-bakery-pink-dark" data-category="Crinkle Cookies">Crinkle cookies</button>
+                        <button class="shop-filter rounded-full bg-pink-50 px-4 py-2 text-bakery-gold hover:bg-bakery-pink-dark" data-category="Napolitaines">Napolitaines</button>
+                        <button class="shop-filter rounded-full bg-pink-50 px-4 py-2 text-bakery-gold hover:bg-bakery-pink-dark" data-category="Indian Sweets">Indian sweets</button>
+                        <button class="shop-filter rounded-full bg-pink-50 px-4 py-2 text-bakery-gold hover:bg-bakery-pink-dark" data-category="Cakes">Cakes</button>
+                        <button class="shop-filter rounded-full bg-pink-50 px-4 py-2 text-bakery-gold hover:bg-bakery-pink-dark" data-category="Brownies">Brownies</button>
+                    </nav>
                 </div>
 
                 <div id="shop-products-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6"></div>
                 <div id="empty-products-state"
                     class="mt-8 rounded-3xl border border-dashed border-pink-200 bg-pink-50/70 p-8 text-center text-gray-600">
-                    <p class="font-semibold text-bakery-gold">No products available yet.</p>
-                    <p class="mt-2 text-sm">Add your first product from the admin dashboard to start displaying it here.
+                    <p class="font-semibold text-bakery-gold">A fresh batch is on its way.</p>
+                    <p class="mt-2 text-sm">Check back soon for today's treats, or contact us to place a custom order.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Blog / Latest Creations Section -->
-        <section id="blog" class="py-24 bg-[#fdf8f6]">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-serif text-bakery-accent font-bold mb-4 uppercase tracking-wider">Read
-                        About Our Latest Creations</h2>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Blog Post 1 -->
-                    <div class="group cursor-pointer blog-card" data-title="Brownie Chupa Chups">
-                        <div class="aspect-video overflow-hidden mb-6 relative">
-                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                alt="Pink Donuts"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm px-3 py-1 text-xs text-bakery-gold uppercase tracking-wider">
-                                August</div>
-                        </div>
-                        <h3
-                            class="text-2xl font-serif text-bakery-gold font-semibold mb-2 group-hover:text-bakery-accent transition-colors">
-                            Brownie Chupa Chups</h3>
-                    </div>
-
-                    <!-- Blog Post 2 -->
-                    <div class="group cursor-pointer blog-card" data-title="Carrot Cake Tart">
-                        <div class="aspect-video overflow-hidden mb-6 relative">
-                            <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                alt="Carrot Cake Tart"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm px-3 py-1 text-xs text-bakery-gold uppercase tracking-wider">
-                                August</div>
-                        </div>
-                        <h3
-                            class="text-2xl font-serif text-bakery-gold font-semibold mb-2 group-hover:text-bakery-accent transition-colors">
-                            Carrot Cake Tart</h3>
-                    </div>
-                </div>
+        <!-- Custom orders -->
+        <section id="blog" class="py-20 bg-[#fdf8f6]">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <p class="text-sm uppercase tracking-[.25em] text-bakery-accent mb-3">Something special in mind?</p>
+                <h2 class="text-3xl md:text-4xl font-serif text-bakery-gold font-bold mb-5">Let's make it yours.</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">Planning a celebration or craving a flavour you don't see? Send a custom order request and we'll help you find the perfect bake.</p>
+                <a href="#contact" class="inline-block bg-bakery-accent text-white px-8 py-3 rounded-full font-medium shadow-lg shadow-pink-200">Talk to us</a>
             </div>
         </section>
 
@@ -639,7 +569,7 @@
             <!-- Decorative bg images based on mockup -->
             <div class="absolute left-10 top-20 w-48 h-96 opacity-80 hidden lg:block">
                 <div class="w-full h-full rounded-full gold-border-circle overflow-hidden p-1">
-                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    <img src="./Resources/Images/Bakery/cookies.svg"
                         alt="Stacked Cookies" class="w-full h-full object-cover rounded-full">
                 </div>
                 <div class="absolute -bottom-10 -right-10 text-bakery-gold opacity-50"><i data-lucide="heart"
@@ -650,11 +580,11 @@
 
             <div class="absolute right-10 top-20 w-64 h-auto opacity-80 hidden lg:flex flex-col gap-4">
                 <div class="w-full h-48 arch-image overflow-hidden border-2 border-bakery-pink-dark">
-                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    <img src="./Resources/Images/Bakery/crinkle-cookies.svg"
                         alt="Donut Arch" class="w-full h-full object-cover">
                 </div>
                 <div class="w-48 h-32 ml-auto overflow-hidden rounded-lg shadow-md border-2 border-white">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    <img src="./Resources/Images/Bakery/cakes.svg"
                         alt="Cake Slice" class="w-full h-full object-cover">
                 </div>
             </div>
@@ -662,7 +592,7 @@
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <h2 class="text-4xl font-serif text-bakery-accent font-bold mb-6 uppercase">Contact Us</h2>
                 <p class="text-gray-500 mb-8 max-w-lg mx-auto">
-                    Have a question? Please don't hesitate to get in touch!
+                    Questions about flavours, custom cakes, or a box for your next celebration? We'd love to hear from you.
                 </p>
 
                 <p class="text-sm text-gray-600 mb-8 px-8">
@@ -671,11 +601,11 @@
                 </p>
 
                 <div class="flex justify-center space-x-6 mb-12 text-bakery-gold">
-                    <a href="#" class="social-btn hover:text-bakery-accent transition-colors" data-network="Facebook"><i
+                    <a href="https://www.facebook.com/" aria-label="Find us on Facebook" class="social-btn hover:text-bakery-accent transition-colors" data-network="Facebook"><i
                             data-lucide="facebook" class="w-5 h-5"></i></a>
-                    <a href="#" class="social-btn hover:text-bakery-accent transition-colors" data-network="Twitter"><i
-                            data-lucide="twitter" class="w-5 h-5"></i></a>
-                    <a href="#" class="social-btn hover:text-bakery-accent transition-colors"
+                    <a href="https://www.facebook.com/" aria-label="Find us on Facebook" class="social-btn hover:text-bakery-accent transition-colors" data-network="Facebook"><i
+                            data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="https://www.instagram.com/" aria-label="Find us on Instagram" class="social-btn hover:text-bakery-accent transition-colors"
                         data-network="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
                 </div>
 
@@ -2522,31 +2452,78 @@
                     setTimeout(() => toast.remove(), 300);
                 }, 3000);
             }
+const contactForm = document.getElementById('contact-form');
 
-            const contactForm = document.getElementById('contact-form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    const btn = contactForm.querySelector('button[type="submit"]');
-                    const originalText = btn.innerText;
-                    btn.innerText = 'Sending...';
-                    btn.disabled = true;
-                    btn.classList.add('opacity-70');
-                    setTimeout(() => {
-                        showToast('Sweet! Your message has been sent successfully.', 'success');
-                        contactForm.reset();
-                        btn.innerText = originalText;
-                        btn.disabled = false;
-                        btn.classList.remove('opacity-70');
-                        if (audioReady) {
-                            const synth = new Tone.PolySynth().toDestination();
-                            synth.volume.value = -15;
-                            synth.triggerAttackRelease(['C5', 'E5', 'G5', 'C6'], '4n');
-                        }
-                    }, 1000);
-                });
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const originalText = btn.innerText;
+
+        const firstName = document.getElementById('first-name')?.value.trim() || '';
+        const lastName = document.getElementById('last-name')?.value.trim() || '';
+        const email = document.getElementById('email')?.value.trim() || '';
+        const message = document.getElementById('message')?.value.trim() || '';
+
+        const fullName = [firstName, lastName]
+            .filter(Boolean)
+            .join(' ');
+
+        btn.innerText = 'Sending...';
+        btn.disabled = true;
+        btn.classList.add('opacity-70');
+
+        try {
+            const response = await emailjs.send(
+                CONTACT_EMAILJS_SERVICE_ID,
+                CONTACT_EMAILJS_TEMPLATE_ID,
+                {
+                    first_name: firstName,
+                    last_name: lastName,
+                    name: fullName,
+                    email: email,
+                    reply_to: email,
+                    message: message
+                },
+                CONTACT_EMAILJS_PUBLIC_KEY
+            );
+
+            if (response.status === 200) {
+                showToast(
+                    'Sweet! Your message has been sent successfully.',
+                    'success'
+                );
+
+                contactForm.reset();
+
+                if (audioReady) {
+                    const synth = new Tone.PolySynth().toDestination();
+                    synth.volume.value = -15;
+                    synth.triggerAttackRelease(
+                        ['C5', 'E5', 'G5', 'C6'],
+                        '4n'
+                    );
+                }
+            } else {
+                throw new Error(`EmailJS returned status ${response.status}`);
             }
 
+        } catch (error) {
+            console.error('Contact form email failed:', error);
+
+            showToast(
+                'Oops! Something went wrong while sending your message.',
+                'error'
+            );
+
+        } finally {
+            btn.innerText = originalText;
+            btn.disabled = false;
+            btn.classList.remove('opacity-70');
+        }
+    });
+}
             let cart = [];
             const cartOverlay = document.getElementById('cart-overlay');
             const cartDrawer = document.getElementById('cart-drawer');
@@ -2726,6 +2703,17 @@
             let currentUser = null;
             let products = [];
             let flavors = [];
+            let curatedCatalog = [];
+            const getProductCategory = (product) => {
+                const name = String(product.name || '').toLowerCase();
+                if (name.includes('brownie')) return 'Brownies';
+                if (name.includes('crinkle')) return 'Crinkle Cookies';
+                if (name.includes('cookie')) return 'Cookies';
+                if (name.includes('cake')) return 'Cakes';
+                if (name.includes('ladoo')) return 'Indian Sweets';
+                if (name.includes('napol')) return 'Napolitaines';
+                return product.category || 'Other';
+            };
             let authMode = 'login';
             let firebaseApiKey = localStorage.getItem(FIREBASE_API_KEY_STORAGE_KEY) || DEFAULT_FIREBASE_API_KEY;
             let firebaseReady = false;
@@ -3021,6 +3009,15 @@
             }
 
             async function loadProductsAndFlavors() {
+                try {
+                    const catalogResponse = await fetch('./Resources/JSON/products.json', { cache: 'no-store' });
+                    if (!catalogResponse.ok) throw new Error(`Catalog request failed (${catalogResponse.status})`);
+                    const catalogPayload = await catalogResponse.json();
+                    curatedCatalog = Array.isArray(catalogPayload) ? catalogPayload : [];
+                } catch (error) {
+                    console.warn('Curated catalog could not be loaded.', error);
+                    curatedCatalog = [];
+                }
                 const localProducts = JSON.parse(localStorage.getItem(PRODUCTS_STORAGE_KEY) || '[]');
                 const localFlavors = JSON.parse(localStorage.getItem(FLAVORS_STORAGE_KEY) || '[]');
                 products = localProducts;
@@ -3059,7 +3056,15 @@
                 shopProductsGrid.innerHTML = '';
                 productsList.innerHTML = '';
 
-                if (products.length === 0) {
+                const storefrontProducts = [
+                    ...products.map(product => ({ ...product, category: getProductCategory(product) })),
+                    ...curatedCatalog.filter(catalogItem => !products.some(product =>
+                        String(product.name || '').toLowerCase() === catalogItem.name.toLowerCase() ||
+                        getProductCategory(product) === catalogItem.category
+                    ))
+                ];
+
+                if (storefrontProducts.length === 0) {
                     emptyProductsState?.classList.remove('hidden');
 
                     productsList.innerHTML =
@@ -3067,7 +3072,10 @@
                 } else {
                     emptyProductsState?.classList.add('hidden');
 
-                    products.forEach((product) => {
+                    emptyProductsState?.classList.add('hidden');
+
+                    storefrontProducts.forEach((product) => {
+                        if (window.activeShopCategory && window.activeShopCategory !== 'all' && product.category !== window.activeShopCategory) return;
 
                         // ---------------------------------------------------------
                         // FLAVORS
@@ -3160,6 +3168,7 @@
                     <img
                         src="${product.imageUrl}"
                         alt="${product.name}"
+                        onerror="this.hidden=true;this.parentElement.classList.add('image-fallback')"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     >
 
@@ -3167,12 +3176,15 @@
                         class="card-overlay absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-auto"
                     >
 
-                        <button
+                        ${product.contactForPrice ? `
+                        <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 font-medium text-bakery-accent shadow-md hover:bg-bakery-pink">
+                            Ask about this treat
+                        </a>` : `<button
                             class="add-to-cart-btn bg-white text-bakery-accent px-4 py-2 rounded-full font-medium transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-bakery-pink flex items-center gap-2 shadow-md"
                         >
                             <i data-lucide="plus" class="w-4 h-4"></i>
                             Add to Cart
-                        </button>
+                        </button>`}
 
                     </div>
 
@@ -3198,7 +3210,7 @@
         "
     >
 
-        <span>Pack of</span>
+        <span>${product.contactForPrice ? '' : 'Pack of'}</span>
 
         <span
             style="
@@ -3207,7 +3219,7 @@
                 color:#8B4A36;
             "
         >
-            ${getPackPiecesDisplay(product.pieces)}
+            ${product.contactForPrice ? product.pieces : getPackPiecesDisplay(product.pieces)}
         </span>
     </span>
 </div>
@@ -3224,7 +3236,7 @@
                     </p>
 
                     <p class="text-bakery-accent font-semibold">
-                        MUR ${Number(product.price).toFixed(2)}
+                        ${product.contactForPrice ? 'Contact us for pricing' : `MUR ${Number(product.price).toFixed(2)}`}
                     </p>
 
                 </div>
@@ -3237,6 +3249,7 @@
                         // ADMIN PRODUCT LIST
                         // ---------------------------------------------------------
 
+                        if (product.contactForPrice) return;
                         const productItem = document.createElement('div');
 
                         productItem.className =
@@ -3598,7 +3611,7 @@
                         cartKey,
                         name: product.name,
                         price: product.price,
-                        image: product.image,
+                        image: product.imageUrl || product.image,
                         quantity,
                         selectedPiecesPerBox: piecesPerBox,
                         pieces: `${piecesPerBox} Pieces`,
@@ -4129,13 +4142,19 @@
                 });
             });
 
+            window.activeShopCategory = 'all';
             document.querySelectorAll('.shop-filter').forEach(filter => {
-                filter.addEventListener('click', (e) => {
-                    document.querySelectorAll('.shop-filter').forEach(f => {
-                        f.classList.remove('font-semibold', 'text-bakery-accent');
+                filter.addEventListener('click', (event) => {
+                    const selected = event.currentTarget;
+                    window.activeShopCategory = selected.dataset.category || 'all';
+                    document.querySelectorAll('.shop-filter').forEach(item => {
+                        const active = item === selected;
+                        item.classList.toggle('bg-bakery-accent', active);
+                        item.classList.toggle('text-white', active);
+                        item.classList.toggle('bg-pink-50', !active);
+                        item.classList.toggle('text-bakery-gold', !active);
                     });
-                    e.target.classList.add('font-semibold', 'text-bakery-accent');
-                    showToast(`Filtering items by: ${e.target.innerText}`, 'success');
+                    renderProducts();
                 });
             });
 

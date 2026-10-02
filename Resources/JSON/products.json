@@ -1,0 +1,68 @@
+[
+  {
+    "id": "catalog-cookies",
+    "name": "Cookies",
+    "category": "Cookies",
+    "price": 150,
+    "contactForPrice": false,
+    "pieces": "6, 12",
+    "flavors": "Strawberry, Blueberry, Chocolate, Vanilla",
+    "imageUrl": "./Resources/Images/Bakery/cookies.svg",
+    "description": "Freshly baked cookies in a mix of classic flavours. Ask us about current availability."
+  },
+  {
+    "id": "catalog-brownies",
+    "name": "Brownies",
+    "category": "Brownies",
+    "price": 250,
+    "contactForPrice": false,
+    "pieces": "6, 12, 20",
+    "flavors": "Chocolate, Oreo",
+    "imageUrl": "./Resources/Images/Bakery/brownies.svg",
+    "description": "Rich, fudgy brownies. Ask us about current availability."
+  },
+  {
+    "id": "catalog-crinkle-cookies",
+    "name": "Crinkle Cut Cookies",
+    "category": "Crinkle Cookies",
+    "price": null,
+    "contactForPrice": true,
+    "pieces": "Made to order",
+    "flavors": "",
+    "imageUrl": "./Resources/Images/Bakery/crinkle-cookies.svg",
+    "description": "Soft-centred cookies with their signature crackled finish. Ask us about current flavours and availability."
+  },
+  {
+    "id": "catalog-napolitaines",
+    "name": "Mauritian Napolitaines",
+    "category": "Napolitaines",
+    "price": null,
+    "contactForPrice": true,
+    "pieces": "Made to order",
+    "flavors": "",
+    "imageUrl": "./Resources/Images/Bakery/napolitaines.svg",
+    "description": "A Mauritian favourite: delicate shortbread with a jam centre and classic pink icing. Ask us about a fresh batch."
+  },
+  {
+    "id": "catalog-ladoo",
+    "name": "Ladoo",
+    "category": "Indian Sweets",
+    "price": null,
+    "contactForPrice": true,
+    "pieces": "Made to order",
+    "flavors": "",
+    "imageUrl": "./Resources/Images/Bakery/ladoo.svg",
+    "description": "Traditional Indian sweets for sharing. Contact us to ask about available varieties and ordering."
+  },
+  {
+    "id": "catalog-cakes",
+    "name": "Celebration Cakes",
+    "category": "Cakes",
+    "price": null,
+    "contactForPrice": true,
+    "pieces": "Made to order",
+    "flavors": "",
+    "imageUrl": "./Resources/Images/Bakery/cakes.svg",
+    "description": "Custom cakes for birthdays and special occasions. Share your preferred size, flavour, and design."
+  }
+]
