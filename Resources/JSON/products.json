@@ -7,7 +7,7 @@
     "contactForPrice": false,
     "pieces": "6, 12",
     "flavors": "Strawberry, Blueberry, Chocolate, Vanilla",
-    "imageUrl": "./Resources/Images/Bakery/cookies.svg",
+    "imageUrl": "https://images.unsplash.com/photo-1679943366650-3cbab5ce5ff4?auto=format&fit=crop&w=1200&q=85",
     "description": "Freshly baked cookies in a mix of classic flavours. Ask us about current availability."
   },
   {
@@ -18,7 +18,7 @@
     "contactForPrice": false,
     "pieces": "6, 12, 20",
     "flavors": "Chocolate, Oreo",
-    "imageUrl": "./Resources/Images/Bakery/brownies.svg",
+    "imageUrl": "https://images.unsplash.com/photo-1688279432554-16cd6de375ac?auto=format&fit=crop&w=1200&q=85",
     "description": "Rich, fudgy brownies. Ask us about current availability."
   },
   {
@@ -29,7 +29,7 @@
     "contactForPrice": true,
     "pieces": "Made to order",
     "flavors": "",
-    "imageUrl": "./Resources/Images/Bakery/crinkle-cookies.svg",
+    "imageUrl": "https://zetluna.com/assets/images/1763803099076-9ogszy1c.webp",
     "description": "Soft-centred cookies with their signature crackled finish. Ask us about current flavours and availability."
   },
   {
@@ -40,7 +40,7 @@
     "contactForPrice": true,
     "pieces": "Made to order",
     "flavors": "",
-    "imageUrl": "./Resources/Images/Bakery/napolitaines.svg",
+    "imageUrl": "https://static.wixstatic.com/media/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg/v1/fill/w_1000%2Ch_549%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg",
     "description": "A Mauritian favourite: delicate shortbread with a jam centre and classic pink icing. Ask us about a fresh batch."
   },
   {
@@ -51,7 +51,7 @@
     "contactForPrice": true,
     "pieces": "Made to order",
     "flavors": "",
-    "imageUrl": "./Resources/Images/Bakery/ladoo.svg",
+    "imageUrl": "https://kandoisweets.com/cdn/shop/files/motichur-ladu-kbm.jpg?v=1720246322&width=1200",
     "description": "Traditional Indian sweets for sharing. Contact us to ask about available varieties and ordering."
   },
   {
@@ -62,7 +62,7 @@
     "contactForPrice": true,
     "pieces": "Made to order",
     "flavors": "",
-    "imageUrl": "./Resources/Images/Bakery/cakes.svg",
+    "imageUrl": "https://images.unsplash.com/photo-1639336967446-fa0267ce4f2f?auto=format&fit=crop&w=1200&q=85",
     "description": "Custom cakes for birthdays and special occasions. Share your preferred size, flavour, and design."
   }
 ]
