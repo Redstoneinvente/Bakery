@@ -1,68 +1,123 @@
 [
   {
-    "id": "catalog-cookies",
-    "name": "Cookies",
-    "category": "Cookies",
-    "price": 150,
+    "id": "catalog-tarte-banane-mini",
+    "name": "Tarte Banane - Mini",
+    "category": "Cakes",
+    "price": 25,
     "contactForPrice": false,
-    "pieces": "6, 12",
-    "flavors": "Strawberry, Blueberry, Chocolate, Vanilla",
-    "imageUrl": "https://images.unsplash.com/photo-1679943366650-3cbab5ce5ff4?auto=format&fit=crop&w=1200&q=85",
-    "description": "Freshly baked cookies in a mix of classic flavours. Ask us about current availability."
+    "pieces": "1 Mini",
+    "flavors": "",
+    "imageUrl": "https://recette.supertoinette.com/new/2020-01/tarte-banane-mauricienne-psok-1200.webp",
+    "description": "Mini size — Rs 25"
+  },
+  {
+    "id": "catalog-tarte-banane-medium",
+    "name": "Tarte Banane - Medium",
+    "category": "Cakes",
+    "price": 35,
+    "contactForPrice": false,
+    "pieces": "1 Medium",
+    "flavors": "",
+    "imageUrl": "https://recette.supertoinette.com/new/2020-01/tarte-banane-mauricienne-psok-1200.webp",
+    "description": "Medium size — Rs 35"
+  },
+  {
+    "id": "catalog-napolitaines-mini",
+    "name": "Napolitaines - Mini",
+    "category": "Napolitaines",
+    "price": 25,
+    "contactForPrice": false,
+    "pieces": "1 Mini",
+    "flavors": "Guava",
+    "imageUrl": "https://static.wixstatic.com/media/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg/v1/fill/w_1000%2Ch_549%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg",
+    "description": "Mini Mauritian Napolitaines — Rs 25"
+  },
+  {
+    "id": "catalog-napolitaines-medium",
+    "name": "Napolitaines - Medium",
+    "category": "Napolitaines",
+    "price": 35,
+    "contactForPrice": false,
+    "pieces": "1 Medium",
+    "flavors": "Guava",
+    "imageUrl": "https://static.wixstatic.com/media/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg/v1/fill/w_1000%2Ch_549%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg",
+    "description": "Medium Mauritian Napolitaines — Rs 35"
+  },
+  {
+    "id": "catalog-puit-amour-mini",
+    "name": "Puit d’amour - Mini",
+    "category": "Cakes",
+    "price": 25,
+    "contactForPrice": false,
+    "pieces": "1 Mini",
+    "flavors": "",
+    "imageUrl": "https://www.anoucuit.com/uploads/A6lIML5Xv70fCvN7Rl3miGen275jQj-Opera%20Snapshot_2022-04-22_104244_www.youtube.com2.png",
+    "description": "Mini puit d’amour — Rs 25"
+  },
+  {
+    "id": "catalog-puit-amour-medium",
+    "name": "Puit d’amour - Medium",
+    "category": "Cakes",
+    "price": 35,
+    "contactForPrice": false,
+    "pieces": "1 Medium",
+    "flavors": "",
+    "imageUrl": "https://www.anoucuit.com/uploads/A6lIML5Xv70fCvN7Rl3miGen275jQj-Opera%20Snapshot_2022-04-22_104244_www.youtube.com2.png",
+    "description": "Medium puit d’amour — Rs 35"
   },
   {
     "id": "catalog-brownies",
     "name": "Brownies",
     "category": "Brownies",
+    "price": 90,
+    "contactForPrice": false,
+    "pieces": "1 Piece",
+    "flavors": "Chocolate",
+    "imageUrl": "https://images.unsplash.com/photo-1688279432554-16cd6de375ac?auto=format&fit=crop&w=1200&q=85",
+    "description": "Brownies — Rs 90 per piece"
+  },
+  {
+    "id": "catalog-tiramisu",
+    "name": "Tiramisu",
+    "category": "Cakes",
     "price": 250,
     "contactForPrice": false,
-    "pieces": "6, 12, 20",
-    "flavors": "Chocolate, Oreo",
-    "imageUrl": "https://images.unsplash.com/photo-1688279432554-16cd6de375ac?auto=format&fit=crop&w=1200&q=85",
-    "description": "Rich, fudgy brownies. Ask us about current availability."
+    "pieces": "1 Portion",
+    "flavors": "",
+    "imageUrl": "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?auto=format&fit=crop&w=1200&q=85",
+    "description": "Tiramisu — Rs 250"
   },
   {
-    "id": "catalog-crinkle-cookies",
+    "id": "catalog-crinkle-cut",
     "name": "Crinkle Cut Cookies",
     "category": "Crinkle Cookies",
-    "price": null,
-    "contactForPrice": true,
-    "pieces": "Made to order",
+    "price": 50,
+    "contactForPrice": false,
+    "pieces": "1 Piece",
     "flavors": "",
     "imageUrl": "https://zetluna.com/assets/images/1763803099076-9ogszy1c.webp",
-    "description": "Soft-centred cookies with their signature crackled finish. Ask us about current flavours and availability."
+    "description": "Crinkle Cut — Rs 50 per piece"
   },
   {
-    "id": "catalog-napolitaines",
-    "name": "Mauritian Napolitaines",
-    "category": "Napolitaines",
-    "price": null,
-    "contactForPrice": true,
-    "pieces": "Made to order",
-    "flavors": "",
-    "imageUrl": "https://static.wixstatic.com/media/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg/v1/fill/w_1000%2Ch_549%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01/26efae_6fbb2f94c0984d6ba4895c225bb9af4b~mv2.jpg",
-    "description": "A Mauritian favourite: delicate shortbread with a jam centre and classic pink icing. Ask us about a fresh batch."
-  },
-  {
-    "id": "catalog-ladoo",
-    "name": "Ladoo",
+    "id": "catalog-laddoo-small",
+    "name": "Laddoo - Small",
     "category": "Indian Sweets",
-    "price": null,
-    "contactForPrice": true,
-    "pieces": "Made to order",
-    "flavors": "",
+    "price": 15,
+    "contactForPrice": false,
+    "pieces": "1 Small",
+    "flavors": "Motichoor",
     "imageUrl": "https://kandoisweets.com/cdn/shop/files/motichur-ladu-kbm.jpg?v=1720246322&width=1200",
-    "description": "Traditional Indian sweets for sharing. Contact us to ask about available varieties and ordering."
+    "description": "Small laddoo — Rs 15"
   },
   {
-    "id": "catalog-cakes",
-    "name": "Celebration Cakes",
-    "category": "Cakes",
-    "price": null,
-    "contactForPrice": true,
-    "pieces": "Made to order",
-    "flavors": "",
-    "imageUrl": "https://images.unsplash.com/photo-1639336967446-fa0267ce4f2f?auto=format&fit=crop&w=1200&q=85",
-    "description": "Custom cakes for birthdays and special occasions. Share your preferred size, flavour, and design."
+    "id": "catalog-laddoo-big",
+    "name": "Laddoo - Big",
+    "category": "Indian Sweets",
+    "price": 20,
+    "contactForPrice": false,
+    "pieces": "1 Big",
+    "flavors": "Motichoor",
+    "imageUrl": "https://kandoisweets.com/cdn/shop/files/motichur-ladu-kbm.jpg?v=1720246322&width=1200",
+    "description": "Big laddoo — Rs 20"
   }
 ]
